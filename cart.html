@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة المشتريات - متجر الإناقة</title>
+    <link rel="stylesheet" href="style.css"> <!-- تأكد من ربط ملف CSS -->
+</head>
+<body>
+    <header>
+        <h1>سلة المشتريات - متجر الإناقة</h1>
+        <a href="index.html" class="cart">العودة إلى الصفحة الرئيسية</a>
+    </header>
+    
+    
+
+<table class="cart-table">
+    <thead>
+        <tr>
+            <th>المنتج</th>
+            <th>السعر</th>
+            <th>الكمية</th>
+            <th>المجموع</th>
+        </tr>
+    </thead>
+<thead>
+        <tr>
+            <td colspan="4">لا توجد منتجات في السلة</td>
+        </tr>
+    </thead>
+</table>
+
+<div class="total">
+    <h2>المجموع: 0 ريال</h2>
+</div>
+
+<h3>أدخل بياناتك:</h3>
+
+<form action="submit_order.php" method="POST">
+    <table border="2" style=color:rgb(0,0,0) >
+        <tr style="background-color:rgb(129, 147, 129)">
+            <td><label for="name">اسم الزبون:</label></td>
+            <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr style="background-color:rgb(129, 147, 129)">
+            
+            <td><label for="address">العنوان:</label></td>
+            <td><input type="text" id="address" name="address" required></td>
+        </tr>
+        <tr style="background-color:rgb(129, 147, 129)">
+            <td><label for="phone">رقم الجوال:</label></td>
+            <td><input type="tel" id="phone" name="phone" required></td>
+        </tr>
+    </table>
+    <button type="submit">إرسال الطلب</button>
+</form>
+
+<scipt src="script.js"></script>
+
+</body>
+</html>

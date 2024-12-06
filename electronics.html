@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اجهزة الكترونية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url("img/back.WEBP");
+            color: #f4eded;
+        }
+        header {
+            background-color: #333;
+            color: rgb(48, 39, 39);
+            text-align: left;
+            padding: 1rem 0;
+        }
+        h1{
+            color: bisque;
+            text-align: center;
+        }
+        a{
+         color:white;
+}
+        .cart-link{
+            color:white;
+            float: right;
+            text-align: right;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 2rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .product-card {
+            background: rgb(115, 89, 89);
+            border: 1px solid #ddd;
+            border-radius: 100px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            flex: 1 1 calc(33% - 1.5rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            transition: transform 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            border-radius: 100px;
+        }
+        .product-name {
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem;
+        }
+        .product-price {
+            color: #a52a2a;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 768px) {
+            .product-card {
+                flex: 1 1 calc(50% - 1.5rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .product-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+     <h1>أحذية مميزة</h1>
+    <a href="index.html">عودة إلى الصفحة الرئيسية</a>
+    <a href="cart.html" class="cart-link">انتقل إلى السلة 🛒 </a>
+</header>
+
+<div class="container">
+    <div class="product-card">
+        <img src="img/lap.jpg" alt="الالكترونيه" class="product-image">
+        <h2 class="product-name">لابتوب</h2>
+        <p class="product-price">100 ر.س</p>
+        <button onclick="addToCart('لابتوب', 100)">أضف إلى السلة</button>
+    </div>
+    <div class="product-card">
+        <img src="img/phone.jpg" alt=" جوال" class="product-image">
+        <h2 class="product-name">جوال</h2>
+        <p class="product-price">120 ر.س</p>
+        <button onclick="addToCart('جوال', 100)">أضف إلى السلة</button>
+    </div>
+    <div class="product-card">
+        <img src="img/camera.jpg" alt="كاميره" class="product-image">
+        <h2 class="product-name">كاميره</h2>
+        <p class="product-price">150 ر.س</p>
+        <button onclick="addToCart('كاميره', 100)">أضف إلى السلة</button>
+    </div>
+    <div class="product-card">
+        <img src="img/camera1.jpg" alt="كاميره" class="product-image">
+        <h2 class="product-name">كاميره</h2>
+        <p class="product-price">150 ر.س</p>
+        <button onclick="addToCart('كاميره', 100)">أضف إلى السلة</button>
+    </div>
+</div>>
+<script src="script.js"></script>
+
+</body>
+</html>
